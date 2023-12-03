@@ -82,11 +82,6 @@ PlaceNextChar::
 
 .NotLine
 
-MACRO dicr ; dict relative
-	cp \1
-	jr z, \2
-ENDM
-
 ; Check against a dictionary
 	dict "<NULL>",    NullChar
 	dict "<SCROLL>",  _ContTextNoPause
@@ -108,9 +103,12 @@ ENDM
 	dict "<DEXEND>",  PlaceDexEnd
 	dict "<TARGET>",  PlaceMoveTargetsName
 	dict "<USER>",    PlaceMoveUsersName
-	dicr "ﾟ",	  .upper_line ; label name converted from leak
-	dicr "ﾞ",	  .dakuon_chr ; label name converted from leak
-
+	
+	cp "ﾟ"
+	jr z, .upper_line ; label name converted from leak
+	cp "ﾞ"
+	jr nz, .dakuon_chr ; label name converted from leak
+	
 	ld [hli], a
 	call PrintLetterDelay
 
