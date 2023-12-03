@@ -109,7 +109,7 @@ ENDM
 	dict "<TARGET>",  PlaceMoveTargetsName
 	dict "<USER>",    PlaceMoveUsersName
 	dicr "゜",	  .upper_line ; label name converted from leak
-	dicr "゛",	  .dakuon_chr ; label name converted from leak
+	dicr "ﾞ",	  .dakuon_chr ; label name converted from leak
 
 	ld [hli], a
 	call PrintLetterDelay
@@ -124,7 +124,7 @@ ENDM
 
 .dakuon_chr: ; label name converted from leak
 	cp "<BOLD_A>" ; cp 060h
-	jr nc, .normal_char ; label name converted from leak
+	jr nc, .normal_chr ; label name converted from leak
 	cp "パ" ; cp 040h
 	jr nc, .handakuon_chr ; label name converted from leak
 	cp $20 ; cp 020h
@@ -135,7 +135,7 @@ ENDM
 	add a, $90
 .ten: ; label name converted from leak
 	push af
-	ld a, "゛"
+	ld a, "ﾞ"
 	push hl
 	ld bc, -SCREEN_WIDTH
 	add hl, bc
