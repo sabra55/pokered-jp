@@ -1,31 +1,19 @@
 _RhydonDexEntry::
-	text "Protected by an"
-	next "armor-like hide,"
-	next "it is capable of"
-
-	page "living in molten"
-	next "lava of 3,600"
-	next "degrees"
+	text "しんかして　うしるあし　だけで"
+	next "たつようになった。シノで　つかれると"
+	next "がんせきにも　あながあいてしまう"
 	dex
 
 _KangaskhanDexEntry::
-	text "The infant rarely"
-	next "ventures out of"
-	next "its mother's"
-
-	page "protective pouch"
-	next "until it is 3"
-	next "years old"
+	text "メスはおなかの　ふくるに"
+	next "こどもを　いれて　そだてる。"
+	next "れんぞくパンチ　こうげきが　とくい"
 	dex
 
 _NidoranMDexEntry::
-	text "Stiffens its ears"
-	next "to sense danger."
-	next "The larger its"
-
-	page "horns, the more"
-	next "powerful its"
-	next "secreted venom"
+	text "みみが　おおきく　とおくの　おとを"
+	next "きくとき　はばたくように　うごく。"
+	next "おこると　どくぼりを　だす"
 	dex
 
 _ClefairyDexEntry::
