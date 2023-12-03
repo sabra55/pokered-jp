@@ -159,7 +159,7 @@ PlaceNextChar::
 	pop af
 .normal_chr: ; label name converted from leak
 	ld [hli], a
-	; call okuri_chk ; what is the pokered equivalent of okuri_chk?
+	call PrintLetterDelay
 
 NextChar:: ; msg_count$:
 	inc de
