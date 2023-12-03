@@ -1,4 +1,4 @@
-# Pocket Monsters Red Version & Pocket Monsters Green Version
+# Pocket Monsters Red Version & Green Version
 
 This is an in-progress disassembly of Pocket Monsters Red & Green, the Japanese precursors to Pokémon Red and Blue.
 
@@ -13,9 +13,6 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
 
 ## See also
-
-- [**Wiki**][wiki] (includes [tutorials][tutorials])
-- [**Symbols**][symbols]
 
 This disassembly was made possible by pret. You can find pret on [Discord (pret, #pokered)](https://discord.gg/d5dubZ3).
 
