@@ -82,6 +82,11 @@ PlaceNextChar::
 
 .NotLine
 
+MACRO dicr ; dict relative
+	cp \1
+	jr z, \2
+ENDM
+
 ; Check against a dictionary
 	dict "<NULL>",    NullChar
 	dict "<SCROLL>",  _ContTextNoPause
@@ -99,15 +104,66 @@ PlaceNextChar::
 	dict "<……>",      SixDotsChar
 	dict "<DONE>",    DoneText
 	dict "<PROMPT>",  PromptText
-	dict "<PKMN>",    PlacePKMN
+	dict "<GA>",      PlaceGa
 	dict "<DEXEND>",  PlaceDexEnd
 	dict "<TARGET>",  PlaceMoveTargetsName
 	dict "<USER>",    PlaceMoveUsersName
+	dicr "゜",	  .upper_line ; label name converted from leak
+	dicr "゛",	  .dakuon_chr ; label name converted from leak
 
 	ld [hli], a
 	call PrintLetterDelay
 
-NextChar::
+.upper_line: ; label name converted from leak
+	push hl
+	ld bc, -SCREEN_WIDTH
+	add hl, bc
+	ld [hl], a
+	pop hl
+	jr NextChar
+
+.dakuon_chr: ; label name converted from leak
+	cp "<BOLD_A>" ; cp 060h
+	jr nc, .normal_char ; label name converted from leak
+	cp "パ" ; cp 040h
+	jr nc, .handakuon_chr ; label name converted from leak
+	cp $20 ; cp 020h
+	jr nc, .daku_hiragana ; label name converted from leak
+	add a, $80
+	jr .ten ; label name converted from leak
+.daku_hiragana: ; label name converted from leak
+	add a, $90
+.ten: ; label name converted from leak
+	push af
+	ld a, "゛"
+	push hl
+	ld bc, -SCREEN_WIDTH
+	add hl, bc
+	ld [hl], a
+	pop hl
+	pop af
+	jr .normal_chr ; label name converted from leak
+.handakuon_chr: ; label name converted from leak
+	cp "ぱ" ; cp 040h
+	jr nc, .han_hiragana ; label name converted from leak
+	add a, $59
+	jr .maru ; label name converted from leak
+.han_hiragana: ; label name converted from leak
+	add a, $86
+.maru: ; label name converted from leak
+	push af
+	ld a, "゜"
+	push hl
+	ld bc, -SCREEN_WIDTH
+	add hl, bc
+	ld [hl], a
+	pop hl
+	pop af
+.normal_chr: ; label name converted from leak
+	ld [hli], a
+	; call okuri_chk ; what is the pokered equivalent of okuri_chk?
+
+NextChar:: ; msg_count$:
 	inc de
 	jp PlaceNextChar
 
@@ -142,7 +198,7 @@ PCChar::      print_name PCCharText
 RocketChar::  print_name RocketCharText
 PlacePOKe::   print_name PlacePOKeText
 SixDotsChar:: print_name SixDotsCharText
-PlacePKMN::   print_name PlacePKMNText
+PlaceGa::     print_name PlaceGaText
 
 PlaceMoveTargetsName::
 	ldh a, [hWhoseTurn]
@@ -176,14 +232,14 @@ PlaceCommandCharacter::
 	inc de
 	jp PlaceNextChar
 
-TMCharText::      db "TM@"
-TrainerCharText:: db "TRAINER@"
-PCCharText::      db "PC@"
-RocketCharText::  db "ROCKET@"
-PlacePOKeText::   db "POKé@"
+TMCharText::      db "わざマシン@"
+TrainerCharText:: db "トレーナー@"
+PCCharText::      db "パソコン@"
+RocketCharText::  db "ロケットだん@"
+PlacePOKeText::   db "ポケモン@"
 SixDotsCharText:: db "……@"
-EnemyText::       db "Enemy @"
-PlacePKMNText::   db "<PK><MN>@"
+EnemyText::       db "てきの @"
+PlaceGaText::     db "が　@"
 
 ContText::
 	push de
