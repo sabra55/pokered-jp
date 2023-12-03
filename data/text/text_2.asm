@@ -1679,110 +1679,103 @@ _AccessedOaksPCText::
 	prompt
 
 _WhereWouldYouLikeText::
-	text "Where would you"
-	line "like to go?"
+	text "どちらの　へやに"
+	line "いきますか？"
 	done
 
 _PleaseWaitText::
-	text "OK, please wait"
-	line "just a moment."
+	text "それでは　これより"
+	line "ごあんない　いたします"
 	done
 
 _LinkCanceledText::
-	text "The link was"
-	line "canceled."
+	text "つうしんは　キャンセル　されました"
 	done
 
 _OakSpeechText1::
-	text "Hello there!"
-	line "Welcome to the"
-	cont "world of #MON!"
+	text "はじめまして！"
+	line "ポケット　モンスターの　せかいへ"
+	cont "ようこそ！"
 
-	para "My name is OAK!"
-	line "People call me"
-	cont "the #MON PROF!"
+	para "わたしの　なまえは　オーキド"
+	line "みんなからは　#　はかせと"
+	cont "したわれて　おるよ"
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@"
+	text "この　せかいには"
+	line "ポケット　モンスターと　よばれる"
+	
+	para "いきもの　たちが"
+	line "いたるとこるに　すんでいる！@"
 	text_end
 
 _OakSpeechText2B::
 	text_start
 
-	para "For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
+	para "その　#　という　いきものを"
+	line "ひとは　ペットに　したり"
+	cont "しょうぶに　つかったり",$74,$74,$74
 
-	para "Myself..."
+	para "そして",$74,$74,$74
 
-	para "I study #MON"
-	line "as a profession."
+	para "わたしは　この　#の"
+	line "けんきゅうを　してる　というわけど"
 	prompt
 
 _IntroducePlayerText::
-	text "First, what is"
-	line "your name?"
+	text "では　はじめに　きみの　なまえを"
+	line "おしえて　もりおう！"
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+	text "こいつは　わたしの　まご"
+	line "きみの　おさななじみであり"
+	cont "ライバル　である"
 
-	para "...Erm, what is"
-	line "his name again?"
+	para $74,$74,$74,"えーと？"
+	line "なまえは　なんて　いったかな？"
 	prompt
 
 _OakSpeechText3::
 	text "<PLAYER>!"
 
-	para "Your very own"
-	line "#MON legend is"
-	cont "about to unfold!"
+	para "いよいよ　これから"
+	line "きみの　ものがたりの　はじまりだ！"
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+	para "ゆめと　ぼうけんと！"
+	line "ポケット　モンスターの　せかいへ！"
+	cont "レッジ　ゴー！"
 	done
 
 _DoYouWantToNicknameText::
-	text "Do you want to"
-	line "give a nickname"
-	cont "to @"
+	text "@"
 	text_ram wcd6d
-	text "?"
+	text "に"
+	line "ニックネームを　つけますか？"
 	done
 
 _YourNameIsText::
-	text "Right! So your"
-	line "name is <PLAYER>!"
+	text "ふむ",$74,$74,$74
+	line "<PLAYER>　と　いうんだな！"
 	prompt
 
 _HisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+	text "そうだ　そうだ！おもいだしたぞ"
+	line "<RIVAL>　という　なまえだ"
 	prompt
 
 _WillBeTradedText::
 	text_ram wNameOfPlayerMonToBeTraded
-	text " and"
-	line "@"
+	text "と@"
 	text_ram wcd6d
-	text " will"
-	cont "be traded."
+	text "を"
+	line "こうかんします"
 	done
 
 _TextIDErrorText::
 	text_decimal hSpriteIndexOrTextID, 1, 2
-	text " ERROR."
+	text "エラー"
 	done
 
 _ContCharText::
