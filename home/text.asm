@@ -108,7 +108,7 @@ ENDM
 	dict "<DEXEND>",  PlaceDexEnd
 	dict "<TARGET>",  PlaceMoveTargetsName
 	dict "<USER>",    PlaceMoveUsersName
-	dicr "゜",	  .upper_line ; label name converted from leak
+	dicr "ﾟ",	  .upper_line ; label name converted from leak
 	dicr "ﾞ",	  .dakuon_chr ; label name converted from leak
 
 	ld [hli], a
@@ -152,7 +152,7 @@ ENDM
 	add a, $86
 .maru: ; label name converted from leak
 	push af
-	ld a, "゜"
+	ld a, "ﾟ"
 	push hl
 	ld bc, -SCREEN_WIDTH
 	add hl, bc
