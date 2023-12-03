@@ -1,149 +1,143 @@
 _CardKeySuccessText1::
-	text "Bingo!@"
+	text "<……>ピンポーン！@"
 	text_end
 
 _CardKeySuccessText2::
-	text_start
-	line "The CARD KEY"
-	cont "opened the door!"
+	text "ジ"
+	line "カードキーで　ロック　をはずした！"
 	done
 
 _CardKeyFailText::
-	text "Darn! It needs a"
-	line "CARD KEY!"
+	text "<……>だめだ！"
+	line "カードキーが　ないと　あかない！"
 	done
 
 _TrainerNameText::
 	text_ram wcd6d
-	text ": @"
+	text "『@"
 	text_end
 
 _NoNibbleText::
-	text "Not even a nibble!"
+	text "つれないなー<……>"
 	prompt
 
 _NothingHereText::
-	text "Looks like there's"
-	line "nothing here."
+	text "なにも　いない　みたい<……>"
 	prompt
 
 _ItsABiteText::
-	text "Oh!"
-	line "It's a bite!"
+	text "おっ！"
+	line "ひいてる　ひいてる！"
 	prompt
 
 _ExclamationText::
-	text "!"
+	text "！"
 	done
 
 _GroundRoseText::
-	text "Ground rose up"
-	line "somewhere!"
+	text "どこかで　じめんがもりあがった！"
 	done
 
 _BoulderText::
-	text "This requires"
-	line "STRENGTH to move!"
+	text "「かいりき」　で　うごかせるかも<……>"
 	done
 
 _MartSignText::
-	text "All your item"
-	line "needs fulfilled!"
-	cont "#MON MART"
+	text "#　グッズが　いっぱい！"
+	line "フレンドりィショップ"
 	done
 
 _PokeCenterSignText::
-	text "Heal Your #MON!"
-	line "#MON CENTER"
+	text "#の　たいりょく　かいふく！"
+	line "#センター"
 	done
 
 _FoundItemText::
-	text "<PLAYER> found"
+	text "<PLAYER>は"
 	line "@"
 	text_ram wStringBuffer
-	text "!@"
+	text "を　みつけた！@"
 	text_end
 
 _NoMoreRoomForItemText::
-	text "No more room for"
-	line "items!"
+	text "もちものが　いっぱい！"
 	done
 
 _OaksAideHiText::
-	text "Hi! Remember me?"
-	line "I'm PROF.OAK's"
-	cont "AIDE!"
+	text "ぼく　おばえてます？"
+	line "ほら<……>！"
+	cont "オーキド　はかせの　じょしゅ　です"
 
-	para "If you caught @"
+	para "#ずかんが@"
 	text_decimal hOaksAideRequirement, 1, 3
-	text_start
-	line "kinds of #MON,"
-	cont "I'm supposed to"
-	cont "give you an"
+	text "しゅるい"
+	line "おつまってる　ようなら"
 	cont "@"
 	text_ram wOaksAideRewardItemName
-	text "!"
+	text "ふを　わたす　よう"
+	cont "はかせに　いわれ　ました"
 
-	para "So, <PLAYER>! Have"
-	line "you caught at"
-	cont "least @"
+	para "<……>　それでは さっそく"
+	line "<PLAYER>くん！"
+	cont "つかまえた　#は" 
+	cont "@"
 	text_decimal hOaksAideRequirement, 1, 3
-	text " kinds of"
-	cont "#MON?"
+	text "しゅるい　より　おおい　かな？
 	done
 
 _OaksAideUhOhText::
-	text "Let's see..."
-	line "Uh-oh! You have"
-	cont "caught only @"
+	text "<……>　<……>　えーと！"
+	line "つかまえた　#は<……>"
+	cont "あれれー？"
+	cont "まだゴを@"
 	text_decimal hOaksAideNumMonsOwned, 1, 3
-	text_start
-	cont "kinds of #MON!"
+	text "ドしゅれい　ですよ！"
 
-	para "You need @"
+	para "@"
 	text_decimal hOaksAideRequirement, 1, 3
-	text " kinds"
-	line "if you want the"
-	cont "@"
+	text "しゅれいに　たりない　なら"
+	line "@"
 	text_ram wOaksAideRewardItemName
-	text "."
+	text "ふは"
+	cont "また　こんど　ですね"
 	done
 
 _OaksAideComeBackText::
-	text "Oh. I see."
+	text "<……>　<……>　そう　ですか"
 
-	para "When you get @"
+	para "@"
 	text_decimal hOaksAideRequirement, 1, 3
-	text_start
-	line "kinds, come back"
-	cont "for @"
+	text "しゅれいに　たりない　なら"
+	line "@"
 	text_ram wOaksAideRewardItemName
-	text "."
+	text "ふは"
+	cont "また　こんど　ですね"
 	done
 
 _OaksAideHereYouGoText::
-	text "Great! You have"
-	line "caught @"
+	text "<……>　<……>　なるほど！"
+	line "つかまえた　#は<……>"
+	cont "ゴを@"
 	text_decimal hOaksAideNumMonsOwned, 1, 3
-	text " kinds "
-	cont "of #MON!"
-	cont "Congratulations!"
+	text "ドしゅれい　ですね！"
+	cont "おめでとう！"
 
-	para "Here you go!"
+	para "それでは"
+	line "これを　おわたし　します！"
 	prompt
 
 _OaksAideGotItemText::
-	text "<PLAYER> got the"
+	text "<PLAYER>は　じょしゅ　から"
 	line "@"
 	text_ram wOaksAideRewardItemName
-	text "!@"
+	text "ふを　もらった！@"
 	text_end
 
 _OaksAideNoRoomText::
-	text "Oh! I see you"
-	line "don't have any"
-	cont "room for the"
+	text "<……>　<……>　と　おもった　けど"
+	line "にもつが　いっぱい　だから"
 	cont "@"
 	text_ram wOaksAideRewardItemName
-	text "."
+	text "ふは"
+	cont "また こんど ですね"
 	done
