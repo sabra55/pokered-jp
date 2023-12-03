@@ -1,6 +1,6 @@
 # Instructions
 
-These instructions explain how to set up the tools required to build **pokered**, including [**rgbds**](https://github.com/gbdev/rgbds), which assembles the source files into a ROM.
+These instructions explain how to set up the tools required to build **pokered-jp**, including [**rgbds**](https://github.com/gbdev/rgbds), which assembles the source files into a ROM.
 
 If you run into trouble, ask for help on IRC or Discord (see [README.md](README.md)).
 
@@ -58,7 +58,7 @@ cd /cygdrive/c/Users/<user>/Desktop
 
 (The Windows `C:\` drive is called `/cygdrive/c/` in Cygwin. Replace *\<user>* in the example path with your username.)
 
-Now you're ready to [build **pokered**](#build-pokered).
+Now you're ready to [build **pokered-jp**](#build-pokered-jp).
 
 
 ## macOS
@@ -69,7 +69,7 @@ Open **Terminal** and prepare to enter commands.
 
 Then follow the [**rgbds** instructions](https://rgbds.gbdev.io/install#pre-built) for macOS to install **rgbds 0.6.1**.
 
-Now you're ready to [build **pokered**](#build-pokered).
+Now you're ready to [build **pokered-jp**](#build-pokered-jp).
 
 
 ## Linux
@@ -78,7 +78,7 @@ Open **Terminal** and enter the following commands, depending on which distro yo
 
 ### Debian or Ubuntu
 
-To install the software required for **pokered**:
+To install the software required for **pokered-jp**:
 
 ```bash
 sudo apt-get install make gcc git
@@ -88,7 +88,7 @@ Then follow the [**rgbds** instructions](https://rgbds.gbdev.io/install#building
 
 ### OpenSUSE
 
-To install the software required for **pokered**:
+To install the software required for **pokered-jp**:
 
 ```bash
 sudo zypper install make gcc git
@@ -98,7 +98,7 @@ Then follow the [**rgbds** instructions](https://rgbds.gbdev.io/install#building
 
 ### Arch Linux
 
-To install the software required for **pokered**:
+To install the software required for **pokered-jp**:
 
 ```bash
 sudo pacman -S make gcc git rgbds
@@ -108,7 +108,7 @@ If you want to compile and install **rgbds** yourself instead, then follow the [
 
 ### Termux
 
-To install the software required for **pokered**:
+To install the software required for **pokered-jp**:
 
 ```bash
 sudo apt install make clang git sed
@@ -133,19 +133,19 @@ If your distro is not listed here, try to find the required software in its repo
 
 If `rgbds` is not available, you'll need to follow the [**rgbds** instructions](https://rgbds.gbdev.io/install#building-from-source) to build **rgbds 0.6.1** from source.
 
-Now you're ready to [build **pokered**](#build-pokered).
+Now you're ready to [build **pokered-jp**](#build-pokered-jp).
 
 
-## Build pokered
+## Build pokered-jp
 
-To download the **pokered** source files:
+To download the **pokered-jp** source files:
 
 ```bash
-git clone https://github.com/pret/pokered
-cd pokered
+git clone https://github.com/sabra55/pokered-jp
+cd pokered-jp
 ```
 
-To build **pokered.gbc** and **pokeblue.gbc**:
+To build **pokered.gbc** and **pokegreen.gbc**:
 
 ```bash
 make
@@ -153,7 +153,7 @@ make
 
 ### Build with a local rgbds version
 
-If you have different projects that require different versions of `rgbds`, it might not be convenient to install rgbds 0.6.1 globally. Instead, you can put its files in a directory within pokered, such as `pokered/rgbds-0.6.1/`. Then specify it when you run `make`:
+If you have different projects that require different versions of `rgbds`, it might not be convenient to install rgbds 0.6.1 globally. Instead, you can put its files in a directory within pokered-jp, such as `pokered-jp/rgbds-0.6.1/`. Then specify it when you run `make`:
 
 ```bash
 make RGBDS=rgbds-0.6.1/
