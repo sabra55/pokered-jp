@@ -11,6 +11,8 @@ It attempts to build the following ROMs:
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
+Have an issue? See [**KNOWNBUGS.md**](KNOWNBUGS.md).
+
 
 ## See also
 
