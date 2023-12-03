@@ -82,7 +82,7 @@ _OaksAideHiText::
 	cont "つかまえた　#は" 
 	cont "@"
 	text_decimal hOaksAideRequirement, 1, 3
-	text "しゅるい　より　おおい　かな？
+	text "しゅるい　より　おおい　かな？"
 	done
 
 _OaksAideUhOhText::
