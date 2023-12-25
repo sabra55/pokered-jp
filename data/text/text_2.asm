@@ -1519,163 +1519,151 @@ _WithdrewItemText::
 	prompt
 
 _NothingStoredText::
-	text "There is nothing"
-	line "stored."
+	text "なにも あずけていません!"
 	prompt
 
 _CantCarryMoreText::
-	text "You can't carry"
-	line "any more items."
+	text "それいじょう　もちきれませんね"
+	line "いらないモノを　せいりしてください"
 	prompt
 
 _WhatToTossText::
-	text "What do you want"
-	line "to toss away?"
+	text "なにを　すてますか？"
 	done
 
 _TossHowManyText::
-	text "How many?"
+	text "いくつ　あずけますか?"
 	done
 
 _AccessedHoFPCText::
-	text "Accessed #MON"
-	line "LEAGUE's site."
+	text "#りーグ　ホストと　つないだ！"
 
-	para "Accessed the HALL"
-	line "OF FAME List."
+	para "でんどう　いり　りスト"
+	line "かんり　システムを　よびだした！"
 	prompt
 
 _SwitchOnText::
-	text "Switch on!"
+	text "スイッチ　オン!"
 	prompt
 
 _WhatText::
-	text "What?"
+	text "なんに　するん?"
 	done
 
 _DepositWhichMonText::
-	text "Deposit which"
-	line "#MON?"
+	text "どの　#を"
+	line "あずけたいんや?"
 	done
 
 _MonWasStoredText::
 	text_ram wStringBuffer
-	text " was"
-	line "stored in Box @"
+	text "を　ボックス@"
 	text_ram wBoxNumString
-	text "."
+	text "に"
+	line "あずけた！"
 	prompt
 
 _CantDepositLastMonText::
-	text "You can't deposit"
-	line "the last #MON!"
+	text "それ　あずけたら"
+	line "こまるん　ちゅう？"
 	prompt
 
 _BoxFullText::
-	text "Oops! This Box is"
-	line "full of #MON."
+	text "おちゃ！　ウチは"
+	line "#で　いっぱいや"
 	prompt
 
 _MonIsTakenOutText::
+	text "ぴまを"
+	line "また　つれていく　ことにした！"
+	cont "@"
 	text_ram wStringBuffer
-	text " is"
-	line "taken out."
-	cont "Got @"
-	text_ram wStringBuffer
-	text "."
+	text "を　うけとった！"
 	prompt
 
 _NoMonText::
-	text "What? There are"
-	line "no #MON here!"
+	text "なに?"
+	line "ウチは　なんも　あずかっとらんで？"
 	prompt
 
 _CantTakeMonText::
-	text "You can't take"
-	line "any more #MON."
+	text "そんなん　いうても"
+	line "#　もちきれへんやんけ！"
 
-	para "Deposit #MON"
-	line "first."
+	para "とりあえず　あずけるか　にがすか"
+	line "したら　ええんちゃう？"
 	prompt
 
 _ReleaseWhichMonText::
-	text "Release which"
-	line "#MON?"
+	text "どの　#を"
+	line "にがすんや?"
 	done
 
 _OnceReleasedText::
-	text "Once released,"
-	line "@"
+	text "にがすと　@"
 	text_ram wStringBuffer
-	text " is"
-	cont "gone forever. OK?"
+	text "は"
+	line "もう　もどってこんで　ええんか？"
 	done
 
 _MonWasReleasedText::
+	text "ぴまを"
+	line "そとに　にがして　あげた！"
+	cont "ばいばい　@"
 	text_ram wStringBuffer
-	text " was"
-	line "released outside."
-	cont "Bye @"
-	text_ram wStringBuffer
-	text "!"
 	prompt
 
 _RequireCoinCaseText::
-	text "A COIN CASE is"
-	line "required!@"
+	text "コインケースを　もっていない！@"
 	text_end
 
 _ExchangeCoinsForPrizesText::
-	text "We exchange your"
-	line "coins for prizes."
+	text "コインを"
+	line "けいひんと　こうかんするよ"
 	prompt
 
 _WhichPrizeText::
-	text "Which prize do"
-	line "you want?"
+	text "なにと　こうかんする？"
 	done
 
 _HereYouGoText::
-	text "Here you go!@"
+	text "はい　どうぞ@"
 	text_end
 
 _SoYouWantPrizeText::
-	text "So, you want"
-	line "@"
+	text_start
 	text_ram wcd6d
-	text "?"
+	text "で"
+	line "いいんだね？"
 	done
 
 _SorryNeedMoreCoinsText::
-	text "Sorry, you need"
-	line "more coins.@"
+	text "おきゃくさん コイン たりないよ@"
 	text_end
 
 _OopsYouDontHaveEnoughRoomText::
-	text "Oops! You don't"
-	line "have enough room.@"
+	text "おきゃくさん　もう　もてないよ@"
 	text_end
 
 _OhFineThenText::
-	text "Oh, fine then.@"
+	text "あっ　そう@"
 	text_end
 
 _GetDexRatedText::
-	text "Want to get your"
-	line "#DEX rated?"
+	text "げんざいの　#ずかんを"
+	line "ひょうか　して　もらい　ますか？"
 	done
 
 _ClosedOaksPCText::
-	text "Closed link to"
-	line "PROF.OAK's PC.@"
+	text "<……>　オーキドの　<PC>との"
+	line "せつぞくを　おわった！@"
 	text_end
 
 _AccessedOaksPCText::
-	text "Accessed PROF."
-	line "OAK's PC."
+	text "オーキドの　<PC>と　つないだ！"
 
-	para "Accessed #DEX"
-	line "Rating System."
+	para "#　ずかん"
+	line "ひょうか　システムを　よびだした！"
 	prompt
 
 _WhereWouldYouLikeText::
@@ -1707,25 +1695,25 @@ _OakSpeechText2A::
 	line "ポケット　モンスターと　よばれる"
 	
 	para "いきもの　たちが"
-	line "いたるとこるに　すんでいる！@"
+	line "いたるところに　すんでいる！@"
 	text_end
 
 _OakSpeechText2B::
 	text_start
 
 	para "その　#　という　いきものを"
-	line "ひとは　ペットに　したり"
+	line "ひとは　ぺットに　したり"
 	cont "しょうぶに　つかったり",$74,$74,$74
 
 	para "そして",$74,$74,$74
 
 	para "わたしは　この　#の"
-	line "けんきゅうを　してる　というわけど"
+	line "けんきゅうを　してる　というわけだ"
 	prompt
 
 _IntroducePlayerText::
 	text "では　はじめに　きみの　なまえを"
-	line "おしえて　もりおう！"
+	line "おしえて　もらおう！"
 	prompt
 
 _IntroduceRivalText::
@@ -1761,7 +1749,7 @@ _YourNameIsText::
 	prompt
 
 _HisNameIsText::
-	text "そうだ　そうだ！おもいだしたぞ"
+	text "そうだ　そうだ！　おもいだしたぞ"
 	line "<RIVAL>　という　なまえだ"
 	prompt
 

@@ -39,7 +39,7 @@ GetName::
 	jr nz, .otherEntries
 	; 1 = MONSTER_NAME
 	call GetMonName
-	ld hl, NAME_LENGTH
+	ld hl, NAME_LENGTH_JP
 	add hl, de
 	ld e, l
 	ld d, h

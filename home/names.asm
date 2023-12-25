@@ -8,14 +8,16 @@ GetMonName::
 	ld a, [wd11e]
 	dec a
 	ld hl, MonsterNames
-	ld c, 10
-	ld b, 0
-	call AddNTimes
+	ld e, a
+	ld d, 0
+	rept 5
+	add hl, de
+	endr
 	ld de, wcd6d
 	push de
-	ld bc, 10
+	ld bc, 5
 	call CopyData
-	ld hl, wcd6d + 10
+	ld hl, wcd6d + 5
 	ld [hl], "@"
 	pop de
 	pop af

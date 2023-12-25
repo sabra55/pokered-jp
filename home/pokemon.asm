@@ -447,7 +447,7 @@ GetPartyMonName::
 	call SkipFixedLengthTextEntries ; add NAME_LENGTH to hl, a times
 	ld de, wcd6d
 	push de
-	ld bc, NAME_LENGTH
+	ld bc, NAME_LENGTH_JP
 	call CopyData
 	pop de
 	pop bc

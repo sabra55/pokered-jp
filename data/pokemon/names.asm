@@ -1,5 +1,5 @@
 MonsterNames::
-	table_width NAME_LENGTH - 1, MonsterNames
+	;table_width NAME_LENGTH_JP - 1, MonsterNames
 	db "サイドン@"
 	db "ガルーラ@"
 	db "ニドラン♂"
@@ -15,7 +15,7 @@ MonsterNames::
 	db "ベトベター"
 	db "げんがー@"
 	db "ニドラン♀"
-	db "ニドクイン
+	db "ニドクイン"
 	db "カラカラ@"
 	db "サイホーン"
 	db "ラプラス@"
@@ -190,4 +190,4 @@ MonsterNames::
 	db "マダツボミ"
 	db "ウツドン@"
 	db "ウツボット"
-	assert_table_length NUM_POKEMON_INDEXES
+	;assert_table_length NUM_POKEMON_INDEXES

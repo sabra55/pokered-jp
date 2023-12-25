@@ -338,18 +338,18 @@ SpecialEnterMap::
 	jp EnterMap
 
 ContinueText:
-	db "CONTINUE"
+	db "つづきからはじめる"
 	next ""
 	; fallthrough
 
 NewGameText:
-	db   "NEW GAME"
-	next "OPTION@"
+	db   "さいしょからはじめる"
+	next "せっていを　かえる@"
 
 CableClubOptionsText:
-	db   "TRADE CENTER"
-	next "COLOSSEUM"
-	next "CANCEL@"
+	db   "トレードセンター"
+	next "コロシアム"
+	next "やめる@"
 
 DisplayContinueGameInfo:
 	xor a
@@ -432,10 +432,10 @@ PrintPlayTime:
 	jp PrintNumber
 
 SaveScreenInfoText:
-	db   "PLAYER"
-	next "BADGES    "
-	next "#DEX    "
-	next "TIME@"
+	db   "しゅじんこう"
+	next "もっているバッジ    こ"
+	next "#ずかん    ひき"
+	next "プレイじかん@"
 
 DisplayOptionMenu:
 	hlcoord 0, 0
@@ -590,19 +590,19 @@ DisplayOptionMenu:
 	jp .eraseOldMenuCursor
 
 TextSpeedOptionText:
-	db   "TEXT SPEED"
-	next " FAST  MEDIUM SLOW@"
+	db   "はなしの はやさ"
+	next " はやい    ふつう    おそい@"
 
 BattleAnimationOptionText:
-	db   "BATTLE ANIMATION"
-	next " ON       OFF@"
+	db   "せんとう アニメーション"
+	next " じっくり みる  どばして みる@"
 
 BattleStyleOptionText:
-	db   "BATTLE STYLE"
-	next " SHIFT    SET@"
+	db   "しあいの ルール"
+	next " いれかえタイプ  かさめきタイプ@"
 
 OptionMenuCancelText:
-	db "CANCEL@"
+	db "をあり@"
 
 ; sets the options variable according to the current placement of the menu cursors in the options menu
 SetOptionsFromCursorPositions:
