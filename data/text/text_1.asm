@@ -1,14 +1,13 @@
 _CardKeySuccessText1::
-	text "<……>ピンポーン！@"
+	text "……ピンポーン！@"
 	text_end
 
 _CardKeySuccessText2::
-	text "ジ"
-	line "カードキーで　ロック　をはずした！"
+	text "カードキーで　ロック　をはずした！"
 	done
 
 _CardKeyFailText::
-	text "<……>だめだ！"
+	text "……だめだ！"
 	line "カードキーが　ないと　あかない！"
 	done
 
@@ -18,11 +17,11 @@ _TrainerNameText::
 	text_end
 
 _NoNibbleText::
-	text "つれないなー<……>"
+	text "つれないなー……"
 	prompt
 
 _NothingHereText::
-	text "なにも　いない　みたい<……>"
+	text "なにも　いない　みたい……"
 	prompt
 
 _ItsABiteText::
@@ -39,7 +38,7 @@ _GroundRoseText::
 	done
 
 _BoulderText::
-	text "「かいりき」　で　うごかせるかも<……>"
+	text "「かいりき」　で　うごかせるかも……"
 	done
 
 _MartSignText::

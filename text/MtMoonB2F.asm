@@ -1,110 +1,101 @@
 _MtMoonB2FDomeFossilYouWantText::
-	text "You want the"
-	line "DOME FOSSIL?"
+	text "こうらの　カセキに　する？"
 	done
 
 _MtMoonB2FHelixFossilYouWantText::
-	text "You want the"
-	line "HELIX FOSSIL?"
+	text "かいの　カセキに　する？"
 	done
 
 _MtMoonB2FReceivedFossilText::
-	text "<PLAYER> got the"
+	text "<PLAYER>は"
 	line "@"
 	text_ram wStringBuffer
-	text "!@"
+	text "を　てにいれた!@"
 	text_end
 
 _MtMoonB2FYouHaveNoRoomText::
-	text "Look, you've got"
-	line "no room for this.@"
+	text "なーんだ　もう　もてないじゃん@"
 	text_end
 
 _MtMoonB2FSuperNerdTheyreBothMineText::
-	text "Hey, stop!"
+	text "こら　まてよ!"
 
-	para "I found these"
-	line "fossils! They're"
-	cont "both mine!"
+	para "この　カセキは"
+	line "ぼく<GA>みつけたんだ"
+	cont "ふたつ　とも　ぼくのだ!"
 	done
 
 _MtMoonB2FSuperNerdOkIllShareText::
-	text "OK!"
-	line "I'll share!"
+	text "わかった!"
+	line "おまえにも　わけて　やるよ"
 	prompt
 
 _MtMoonB2fSuperNerdEachTakeOneText::
-	text "We'll each take"
-	line "one!"
-	cont "No being greedy!"
+	text "ぼくと　おまえで"
+	line "カセキを　１こ　ずつ　だ!"
+	cont "ひとり　じめは　ダメだぞ!"
 	done
 
 _MtMoonB2FSuperNerdTheresAPokemonLabText::
-	text "Far away, on"
-	line "CINNABAR ISLAND,"
-	cont "there's a #MON"
-	cont "LAB."
+	text "ここから　すごく　とおいけど"
+	line "グレン　タウンに"
+	cont "#　けんきゅうじょ<GA>ある"
 
-	para "They do research"
-	line "on regenerating"
-	cont "fossils."
+	para "カセキを　よみがえらせる"
+	line "けんきゅうも　してる　らしいぜ"
 	done
 
 _MtMoonB2FSuperNerdThenThisIsMineText::
-	text "All right. Then"
-	line "this is mine!@"
+	text "それじゃ"
+	line "これは　ぼくの　ものだ!@"
 	text_end
 
 _MtMoonB2FRocket1BattleText::
-	text "TEAM ROCKET will"
-	line "find the fossils,"
-	cont "revive and sell"
-	cont "them for cash!"
+	text "カセキは"
+	line "<ROCKET><GA>みつけるのだ!"
+	cont "ふっかつ　させれば"
+	cont "いい　かねもうけに　なる!"
 	done
 
 _MtMoonB2FRocket1EndBattleText::
-	text "Urgh!"
-	line "Now I'm mad!"
+	text "うー　おこったぞ!"
 	prompt
 
 _MtMoonB2FRocket1AfterBattleText::
-	text "You made me mad!"
-	line "TEAM ROCKET will"
-	cont "blacklist you!"
+	text "おれを　おこらせた"
+	line "おまえは　<ROCKET>の"
+	cont "ブラック　リストに　のるぜ"
 	done
 
 _MtMoonB2FRocket2BattleText::
-	text "We, TEAM ROCKET,"
-	line "are #MON"
-	cont "gangsters!"
+	text "#　マフィア"
+	line "<ROCKET>は"
+	cont "こわくて　つよい　のだ!"
 	done
 
 _MtMoonB2FRocket2EndBattleText::
-	text "I blew"
-	line "it!"
+	text "しくじったか!"
 	prompt
 
 _MtMoonB2FRocket2AfterBattleText::
-	text "Darn it all! My"
-	line "associates won't"
-	cont "stand for this!"
+	text "くそ!"
+	line "なかま<GA>だまっちゃ　いねえぞ"
 	done
 
 _MtMoonB2FRocket3BattleText::
-	text "We're pulling a"
-	line "big job here!"
-	cont "Get lost, kid!"
+	text "おれたちは"
+	line "だいじな　しごとを　してるんだ!"
+	cont "こどもは　おうちへ　かえりな"
 	done
 
 _MtMoonB2FRocket3EndBattleText::
-	text "So, you"
-	line "are good."
+	text "なかなか　やるな"
 	prompt
 
 _MtMoonB2FRocket3AfterBattleText::
-	text "If you find a"
-	line "fossil, give it"
-	cont "to me and scram!"
+	text "カセキを　みつけたら
+	line "ばしょだけ　おしえて"
+	cont "さっさと　かえるんだな!"
 	done
 
 _MtMoonB2FRocket4BattleText::

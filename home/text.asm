@@ -230,14 +230,14 @@ PlaceCommandCharacter::
 	inc de
 	jp PlaceNextChar
 
-TMCharText::      db "わざマシン@"
-TrainerCharText:: db "トレーナー@"
-PCCharText::      db "パソコン@"
-RocketCharText::  db "ロケットだん@"
-PlacePOKeText::   db "ポケモン@"
+TMCharText::      db "わざマシン@"		; wazaMASHIN
+TrainerCharText:: db "トレーナー@"		; TORE-NA-
+PCCharText::      db "パソコン@"		; PASOKON
+RocketCharText::  db "ロケットだん@"	; ROKETTOdan
+PlacePOKeText::   db "ポケモン@"		; POKEMON
 SixDotsCharText:: db "……@"
-EnemyText::       db "てきの @"
-PlaceGaText::     db "が　@"
+EnemyText::       db "てきの @"		; dekino
+PlaceGaText::     db "が　@"			; ga 
 
 ContText::
 	push de

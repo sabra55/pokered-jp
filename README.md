@@ -11,6 +11,8 @@ It attempts to build the following ROMs:
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
+You will have to put the original ROMs of Pocket Monsters Red and Green called `pokemon_red.gb` and `pokemon_green.gb` respectively for `check_bit_perfect.bat` to work. These ROMs are not and will not be included.
+
 Have an issue? See [**KNOWNBUGS.md**](KNOWNBUGS.md).
 
 

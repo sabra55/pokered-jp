@@ -1,119 +1,114 @@
 _MtMoon1FHikerBattleText::
-	text "WHOA! You shocked"
-	line "me! Oh, you're"
-	cont "just a kid!"
+	text "うわーッ!"
+	line "びっくり　した!"
+	cont "<……>　なんだ　こどもか"
 	done
 
 _MtMoon1FHikerEndBattleText::
-	text "Wow!"
-	line "Shocked again!"
+	text "おどろいた!"
 	prompt
 
 _MtMoon1FHikerAfterBattleText::
-	text "Kids like you"
-	line "shouldn't be"
-	cont "here!"
+	text "こどもが"
+	line "こんな　くらい　ところを"
+	cont "ウロウロ　しちゃ　いかん　なあ"
 	done
 
 _MtMoon1FYoungster1BattleText::
-	text "Did you come to"
-	line "explore too?"
+	text "きみも"
+	line "どうくつ　たんけんに　きたのかい"
 	done
 
 _MtMoon1FYoungster1EndBattleText::
-	text "Losing"
-	line "stinks!"
+	text "<……>　まける　なんて"
+	line "カッコ　わるい"
 	prompt
 
 _MtMoon1FYoungster1AfterBattleText::
-	text "I came down here"
-	line "to show off to"
-	cont "girls."
+	text "おんなのこに"
+	line "イイ　とこ　みせようと"
+	cont "こんな　とこ　まで　きちゃった"
 	done
 
 _MtMoon1FCooltrainerF1BattleText::
-	text "Wow! It's way"
-	line "bigger in here"
-	cont "than I thought!"
+	text "わあーッ!"
+	line "どうくつの　なかって"
+	cont "いがいと　ひろいのねー!"
 	done
 
 _MtMoon1FCooltrainerF1EndBattleText::
-	text "Oh!"
-	line "I lost it!"
+	text "あ<……>　まけてる!"
 	prompt
 
 _MtMoon1FCooltrainerF1AfterBattleText::
-	text "How do you get"
-	line "out of here?"
+	text "こんなに　ひろいと"
+	line "どっち<GA>でぐちか　まよっちゃう"
 	done
 
 _MtMoon1FSuperNerdBattleText::
-	text "What! Don't sneak"
-	line "up on me!"
+	text "うわッ!　なんだ？"
+	line "きゅうに　こえを　かけるな!"
 	done
 
 _MtMoon1FSuperNerdEndBattleText::
-	text "My"
-	line "#MON won't do!"
+	text "<……>"
+	line "こんな　#　では　ダメか"
 	prompt
 
 _MtMoon1FSuperNerdAfterBattleText::
-	text "I have to find"
-	line "stronger #MON."
+	text "えーと<……>!　どこかに"
+	line "つよい　#　いないか<……>　な"
 	done
 
 _MtMoon1FCooltrainerF2BattleText::
-	text "What? I'm waiting"
-	line "for my friends to"
-	cont "find me here."
+	text "なによー!"
+	line "どうくつで　はぐれた　ともだちを"
+	cont "ここで　まってるのよ"
 	done
 
 _MtMoon1FCooltrainerF2EndBattleText::
-	text "I lost?"
+	text "わたし　まけたの？"
 	prompt
 
 _MtMoon1FCooltrainerF2AfterBattleText::
-	text "I heard there are"
-	line "some very rare"
-	cont "fossils here."
+	text "この　どうくつに"
+	line "すごい　カセキが"
+	cont "あるって　きいて　きたの"
 	done
 
 _MtMoon1FYoungster2BattleText::
-	text "Suspicious men"
-	line "are in the cave."
-	cont "What about you?"
+	text "あやしい　おとこが"
+	line "どうくつを　うろついてるんだ"
+	cont "きみは<……>？"
 	done
 
 _MtMoon1FYoungster2EndBattleText::
-	text "You"
-	line "got me!"
+	text "やられた!"
 	prompt
 
 _MtMoon1FYoungster2AfterBattleText::
-	text "I saw them! I'm"
-	line "sure they're from"
-	cont "TEAM ROCKET!"
+	text "ぼくが　みた　やつ!"
+	line "まちがい　ない!"
+	cont "あいつ　<ROCKET>　だぜ!"
 	done
 
 _MtMoon1FYoungster3BattleText::
-	text "Go through this"
-	line "cave to get to"
-	cont "CERULEAN CITY!"
+	text "ハナダ　シティに　いくには"
+	line "どうくつを"
+	cont "ぬけないと　だめだよ!"
 	done
 
 _MtMoon1FYoungster3EndBattleText::
-	text "I"
-	line "lost."
+	text "ぼくの　まけだIぼくの　まけだ"
 	prompt
 
 _MtMoon1FYoungster3AfterBattleText::
-	text "ZUBAT is tough!"
-	line "But, it can be"
-	cont "useful if you"
-	cont "catch one."
+	text "ズバットは　てごわい!"
+	line "でも　つかまえられれば"
+	cont "たよりに　なる　#だよ"
 	done
 
 _MtMoon1FBewareZubatSign::
-	text "Beware! ZUBAT is"
-	line "a blood sucker!"
+	text "ズバットの"
+	line "きゅうけつ　こうげきに　ちゅうい!"
 	done
