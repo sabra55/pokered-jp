@@ -93,24 +93,23 @@ _MtMoonB2FRocket3EndBattleText::
 	prompt
 
 _MtMoonB2FRocket3AfterBattleText::
-	text "カセキを　みつけたら
+	text "カセキを　みつけたら"
 	line "ばしょだけ　おしえて"
 	cont "さっさと　かえるんだな!"
 	done
 
 _MtMoonB2FRocket4BattleText::
-	text "Little kids"
-	line "should leave"
-	cont "grown-ups alone!"
+	text "おうっ!"
+	line "おとなの　せかいに"
+	cont "くびを　つっこむと　あぶないぜ!"
 	done
 
 _MtMoonB2FRocket4EndBattleText::
-	text "I'm"
-	line "steamed!"
+	text "あたま　くるぜ"
 	prompt
 
 _MtMoonB2FRocket4AfterBattleText::
-	text "#MON lived"
-	line "here long before"
-	cont "people came."
+	text "にんげん<GA>　うまれる　まえから"
+	line "この　あたりには"
+	cont "#<GA>すんでた　らしいぜ"
 	done

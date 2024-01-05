@@ -1,63 +1,61 @@
 _SSAnne2FWaiterText::
-	text "This ship, she is"
-	line "a luxury liner"
-	cont "for trainers!"
+	text "この　ふねは　せかい　かくちの"
+	line "# <TRAINER><GA>のってる"
+	cont "あこがれの　ごうか　きゃくせん!"
 
-	para "At every port, we"
-	line "hold parties with"
-	cont "invited trainers!"
+	para "みなとに　つくたびに"
+	line "しょうたい　された　<TRAINER>と"
+	cont "こうりゅう　パーティを　してます"
 	done
 
 _SSAnne2FRivalText::
-	text "<RIVAL>: Bonjour!"
+	text "<RIVAL>『ボン　ジュール!"
 	line "<PLAYER>!"
 
-	para "Imagine seeing"
-	line "you here!"
+	para "おやおや!　こんな　ところで"
+	line "あう　とは<……>!"
 
-	para "<PLAYER>, were you"
-	line "really invited?"
+	para "<PLAYER><……>"
+	line "しょうたい　されてたっけ？"
 
-	para "So how's your"
-	line "#DEX coming?"
+	para "それで　#　ずかんの"
+	line "データは　あつまったか!"
 
-	para "I already caught"
-	line "40 kinds, pal!"
+	para "おれ　なんか"
+	line "もう　４０しゅるい　つかまえたぜ!"
 
-	para "Different kinds"
-	line "are everywhere!"
+	para "みち　いっぽん　ちがう　だけで"
+	line "とれる　#も　ちがうぜ!"
 
-	para "Crawl around in"
-	line "grassy areas!"
+	para "ちゃんと　くさむら　はいって"
+	line "さがして　みろ!"
 	done
 
 _SSAnne2FRivalDefeatedText::
-	text "Humph!"
+	text "ふん<……>!"
 
-	para "At least you're"
-	line "raising your"
-	cont "#MON!"
+	para "とにかく<……>　#は"
+	line "そこそこ　そだててる　ようだな!"
 	prompt
 
 _SSAnne2FRivalVictoryText::
-	text "<PLAYER>! What are"
-	line "you, seasick?"
+	text "<PLAYER><……>!"
+	line "ふなよい　してるのか!"
 
-	para "You should shape"
-	line "up, pal!"
+	para "もっと　からだ"
+	line "きたえた　ほう<GA>いいぜ!"
 	prompt
 
 _SSAnne2FRivalCutMasterText::
-	text "<RIVAL>: I heard"
-	line "there was a CUT"
-	cont "master on board."
+	text "<RIVAL>『いあいぎりの　めいじんが"
+	line "ふねに　のってるって　いう　からよ"
 
-	para "But, he was just a"
-	line "seasick, old man!"
+	para "あって　みたら"
+	line "これ<GA>ただの　ふなよい　おやじ!"
 
-	para "But, CUT itself is"
-	line "really useful!"
+	para "でも　この　わざが"
+	line "また　つかえるんだよなー!"
 
-	para "You should go see"
-	line "him! Smell ya!"
+	para "おまえも　あって　みると　いいぜ!"
+	line "じゃー　あばよ!"
 	done

@@ -4,6 +4,7 @@
 
 	charmap "<NULL>",    $00
 	charmap "<PAGE>",    $49
+	charmap "<GA>",		 $4a ; "が　"
 	charmap "<PKMN>",    $4a ; "<PK><MN>"
 	charmap "<_CONT>",   $4b ; implements "<CONT>"
 	charmap "<SCROLL>",  $4c
@@ -239,6 +240,7 @@
 	charmap "び", $3b
 	charmap "ぶ", $3c
 	charmap "べ", $3d
+	charmap "ベ", $3d
 	charmap "ぼ", $3e
 
 	charmap "パ", $40
@@ -249,6 +251,7 @@
 	charmap "ぴ", $45
 	charmap "ぷ", $46
 	charmap "ぺ", $47
+	charmap "ペ", $48
 	charmap "ぽ", $48
 
 	charmap "「", $70
@@ -296,6 +299,7 @@
 	charmap "ユ", $a3
 	charmap "ヨ", $a4
 	charmap "ラ", $a5
+	charmap "リ", $d8
 	charmap "ル", $a6
 	charmap "レ", $a7
 	charmap "ロ", $a8

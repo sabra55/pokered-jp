@@ -1,21 +1,18 @@
 _SSAnne1FWaiterText::
-	text "Bonjour!"
-	line "I am le waiter on"
-	cont "this ship!"
+	text "ボン　ジュール!"
+	line "わたしは　このふねの　ボーイです"
 
-	para "I will be happy"
-	line "to serve you any-"
-	cont "thing you please!"
+	para "ごようを　なんなりと"
+	line "おもうしつけ　ください!"
 
-	para "Ah! Le strong"
-	line "silent type!"
+	para "<……>　<……>　<……>"
+	line "<……>　むくちな　かた　ですね"
 	done
 
 _SSAnne1FSailorText::
-	text "The passengers"
-	line "are restless!"
+	text "この　ふねの　おきゃくは"
+	line "ながたびに　たいくつ　してる!"
 
-	para "You might be"
-	line "challenged by the"
-	cont "more bored ones!"
+	para "ひま　つぶしに　たたかいを"
+	line "いどんで　くる　ひとも　いるかも"
 	done

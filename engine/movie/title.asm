@@ -289,7 +289,7 @@ TitleScreenPickNewMon:
 
 	ld a, $90
 	ldh [hWY], a
-	ld d, 1 ; scroll out
+	ld d, $a0 ; scroll out
 	farcall TitleScroll
 	ret
 

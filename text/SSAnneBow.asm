@@ -1,52 +1,48 @@
 _SSAnneBowSuperNerdText::
-	text "The party's over."
-	line "The ship will be"
-	cont "departing soon."
+	text "パーティも　そろそろ　おわるし"
+	line "ふねの　しゅっぱつの　じかん　だな"
 	done
 
 _SSAnneBowSailor1Text::
-	text "Scrubbing decks"
-	line "is hard work!"
+	text "まったく!"
+	line "デッキ　そうじは　らくじゃねえぜ"
 	done
 
 _SSAnneBowCooltrainerMText::
-	text "Urf. I feel ill."
+	text "うう<……>　きもち　わるい!"
 
-	para "I stepped out to"
-	line "get some air."
+	para "<……>　ふなよい　したので"
+	line "かぜに　あたってるんです<……>"
 	done
 
 _SSAnneBowSailor2BattleText::
-	text "Hey matey!"
+	text "おうおう!　"
 
-	para "Let's do a little"
-	line "jig!"
+	para "ふなのりの　おれと　しょうぶだ!"
 	done
 
 _SSAnneBowSailor2EndBattleText::
-	text "You're"
-	line "impressive!"
+	text "つよいな"
+	line "びっくり　したぜ"
 	prompt
 
 _SSAnneBowSailor2AfterBattleText::
-	text "How many kinds of"
-	line "#MON do you"
-	cont "think there are?"
+	text "なあ!　この　せかいに"
+	line "#は　ぜんぶで　どのくらい"
+	cont "しゅるい<GA>あると　おもうか？"
 	done
 
 _SSAnneBowSailor3BattleText::
-	text "Ahoy there!"
-	line "Are you seasick?"
+	text "おい　ぼうず!"
+	line "のってて　ふなよい　しないか？"
 	done
 
 _SSAnneBowSailor3EndBattleText::
-	text "I was"
-	line "just careless!"
+	text "ゆだん　したか"
 	prompt
 
 _SSAnneBowSailor3AfterBattleText::
-	text "My Pa said there"
-	line "are 100 kinds of"
-	cont "#MON. I think"
-	cont "there are more."
+	text "おれの　おやじは　#は"
+	line "１００しゅるい　いると　いってたが"
+	cont "おれは　それ　いじょう　だと　おもう"
 	done

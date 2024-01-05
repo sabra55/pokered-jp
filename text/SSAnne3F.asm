@@ -1,7 +1,7 @@
 _SSAnne3FSailorText::
-	text "Our CAPTAIN is a"
-	line "sword master!"
+	text "せんちょうは　けんの　たつじん"
+	line "いあいぎりが　とくい!"
 
-	para "He even teaches"
-	line "CUT to #MON!"
+	para "#にも　その　わざを"
+	line "おしえるって　いうぜ!"
 	done
